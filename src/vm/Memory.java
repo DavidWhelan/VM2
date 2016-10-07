@@ -28,4 +28,12 @@ public class Memory
 		memory[address] = value;
 	}
 	
+	public void LoadProgram(int[] program)
+	{
+		for(int i = 0; i<program.length; i++)
+		{
+			Write(i, program[i]);
+		}
+	}
+	
 }
